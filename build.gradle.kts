@@ -7,8 +7,8 @@
 
 plugins {
     id(libs.plugins.android.library.get().pluginId)
-    alias(libs.plugins.kotlin.android)
-    id("tgx-module")
+    //alias(libs.plugins.kotlin.android)
+    //id("tgx-module")
 }
 
 dependencies {
