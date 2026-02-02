@@ -7,6 +7,7 @@
 
 plugins {
     id(libs.plugins.android.library.get().pluginId)
+    // Add
     //alias(libs.plugins.kotlin.android)
     //id("tgx-module")
 }
@@ -16,9 +17,17 @@ dependencies {
 }
 
 android {
+    // Add
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
+        }
+    }
+
+    // Add
+    sourceSets {
+        getByName("main") {
+            jniLibs.srcDirs("src/main/libs")
         }
     }
 
